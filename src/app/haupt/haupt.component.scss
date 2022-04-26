@@ -1,0 +1,32 @@
+h1{
+  text-align: center;
+  color: #1BC789;
+}
+fieldset{
+
+  input {
+     background-color:#1BC789;
+     color: white;
+     width: 50%;
+     margin-top: 10px;
+     border-radius:10px;
+     height: 25px;
+     display:flex;
+  }
+
+  display: flex;
+  border-color:black;
+  margin-top: 20px;
+  border-radius: 15px;
+  width: 80%
+}
+div{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+::placeholder{
+  text-align: center;
+  color:white;
+  font-size:16px;
+}

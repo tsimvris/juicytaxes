@@ -1,0 +1,24 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color:white;
+  background-color: #1BC789;
+  font-family: 'Anton','Montserrat',  sans-serif;
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  margin-top: 0;
+
+}
+@media (max-width: 460px) {
+  h1 {
+    display: flex;
+    justify-content: center;
+    color:white;
+    background-color: #1BC789;
+    font-family: 'Anton','Montserrat',  sans-serif;
+    letter-spacing: 0.7rem;
+    font-size: 2rem
+
+  }
+}
+
