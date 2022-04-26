@@ -12,4 +12,5 @@ export class HauptComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
 }
