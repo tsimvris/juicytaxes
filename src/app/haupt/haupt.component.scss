@@ -3,10 +3,10 @@ h1{
   color: #1BC789;
 }
 fieldset{
-  form{
+  .rein{
     width:100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
   }
@@ -24,7 +24,8 @@ fieldset{
 
   text-align: center;
   display: flex;
-  justify-content: space-around;
+
+  justify-content: space-between;
   border-color:black;
   margin-top: 20px;
   border-radius: 15px;
@@ -65,6 +66,19 @@ output {
   justify-content: center;
   align-items: center;
   letter-spacing: 0.3rem;
+  border-color: black;
+  border: solid;
+
+
+}
+.raus{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  flex-flow: column;
+
 
 }
 

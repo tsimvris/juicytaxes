@@ -3,7 +3,7 @@
 
 <div>
   <fieldset>
-    <form [formGroup]="nameForm">
+    <form class="rein"[formGroup]="nameForm">
       <input type="text" id="pflanzenJahr" name="pflanzenJahr" formControlName="pflanzenJahr"
         placeholder="Wie viele Pflanzen hattest du? ( Jährlich)">
       <br>
@@ -20,9 +20,15 @@
 
 <div>
   <fieldset>
-    <form>
-      <output>Deine Pflanzen haben&nbsp; <span> {{myPlants}} </span>€ gekostet.</output>
-      <output>Deine Brutto Gewinn ist&nbsp; <span>{{myErnte}} €.</span></output>
-    </form>
+    <form class="raus">
+      <output>Du hast &nbsp;<span> {{myPlants}} </span>&nbsp; Pflanzen gekauft.</output>
+      <output>Deine ernte war&nbsp;<span>{{myErnte}} </span>&nbsp; Gramm.</output>
+      <output>Du hast insgesamt&nbsp;<span>{{myErnte}} </span>&nbsp;€ für deine Pflanzen bezahlt.</output>
+      <output>Dein gewinn vor steuer ist&nbsp;<span>{{myErnte}} </span>&nbsp;€ .</output>
+      <output>Im Deutschland gilt eine Freigrenze von 801€ .</output>
+        <output> Sobald man über die 801€ gewinn kommt, bezahlt man für die differenz Steuer</output>
+        <output>Dein Steuerlast &nbsp;<span>{{myErnte}} </span>&nbsp;€ .</output>
+        <output>Somit ist deine reine Gewinn&nbsp;<span>{{myErnte}} </span>&nbsp;€ .</output>
+      </form>
   </fieldset>
 </div>

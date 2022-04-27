@@ -7,7 +7,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup } from '@angular/f
   styleUrls: ['./haupt.component.scss']
 })
 export class HauptComponent implements OnInit {
-
+  plantPrice = 50;
   public nameForm:FormGroup;
   myPlants: string = "";
   myErnte: string = "";
