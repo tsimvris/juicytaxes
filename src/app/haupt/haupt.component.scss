@@ -52,7 +52,7 @@ button{
   border-radius:10px;
   height: 25px;
   margin-top:20px;
-  width:fit-content;
+  width:25%;
 
 }
 output {
@@ -69,7 +69,6 @@ output {
   border-color: black;
   border: solid;
 
-
 }
 .raus{
   width:100%;
@@ -81,6 +80,7 @@ output {
 
 
 }
+
 
 @media (max-width: 900px) {
   h1 {
@@ -113,6 +113,8 @@ output {
     width: 80%
   }
   div{
+    margin-left:20px;
+    margin-right:20px;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -130,7 +132,7 @@ output {
     border-radius:10px;
     height: 25px;
     margin-top:20px;
-    width:80%;
+
 
   }
 }
