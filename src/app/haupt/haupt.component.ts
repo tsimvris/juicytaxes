@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AbstractControl, FormBuilder, FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-haupt',
@@ -7,9 +8,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HauptComponent implements OnInit {
 
-  constructor() { }
+  public nameForm:FormGroup;
+  myPlants: string = "";
+  myErnte: string = "";
+
+  constructor( private formBuilder: FormBuilder) {
+
+    this.nameForm = this.formBuilder.group({
+      pflanzenJahr: '',
+      ernte: '',
+
+    });
+  }
+
+  clickme() {
+
+    this.myPlants=this.nameForm.get('pflanzenJahr')?.value;
+    this.myErnte=this.nameForm.get('ernte')?.value;
+
+  }
+
+
 
   ngOnInit(): void {
+
   }
 
 

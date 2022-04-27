@@ -3,11 +3,18 @@ h1{
   color: #1BC789;
 }
 fieldset{
+  form{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+  }
   input {
      background-color:#1BC789;
      color: white;
-     width: 49%;
+     text-align: center;
+     width: 40%;
      margin-top: 10px;
      border-radius:10px;
      height: 25px;
@@ -24,6 +31,7 @@ fieldset{
   width: 80%
 }
 div{
+  text-align: center;
   display: flex;
   align-items:center;
   justify-content: center;
@@ -44,6 +52,19 @@ button{
   height: 25px;
   margin-top:20px;
   width:fit-content;
+
+}
+output {
+  background-color:#1BC789;
+  color: white;
+  width: fit-content;
+  margin-top: 10px;
+  border-radius:10px;
+  height: 30px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.3rem;
 
 }
 

@@ -1,17 +1,28 @@
 <h1>Juicy Steuer Rechner</h1>
+
+
 <div>
-<fieldset>
-<input id="pflanzenJahr" value="" placeholder="Wie viele Pflanzen hattest du? ( Jährlich)">
-<br>
-<input id="ernte" type="" placeholder="Wie groß war deine ernte im Gramm? (Jährlich)">
-<br>
-
-
-</fieldset>
-
+  <fieldset>
+    <form [formGroup]="nameForm">
+      <input type="text" id="pflanzenJahr" name="pflanzenJahr" formControlName="pflanzenJahr"
+        placeholder="Wie viele Pflanzen hattest du? ( Jährlich)">
+      <br>
+      <input type="text" id="ernte" name="ernte" formControlName="ernte"
+        placeholder="Wie groß war deine ernte im Gramm? (Jährlich)">
+      <br>
+    </form>
+  </fieldset>
 </div>
 <div>
-<button>Berechnen!</button>
+  <button type="button" (click)="clickme()">Berechnen!</button>
 </div>
 
 
+<div>
+  <fieldset>
+    <form>
+      <output>Deine Pflanzen haben&nbsp; <span> {{myPlants}} </span>€ gekostet.</output>
+      <output>Deine Brutto Gewinn ist&nbsp; <span>{{myErnte}} €.</span></output>
+    </form>
+  </fieldset>
+</div>
