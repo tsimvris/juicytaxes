@@ -11,6 +11,13 @@ export class HauptComponent implements OnInit {
   myPlants:any= "";
   myErnte:any= "";
   plantCost:any="";
+  bruttoGewinn:any="";
+  plantPrice:number=50;
+  grammPrice:number=1.5;
+  steuer:number=0.285;
+  steuerAnteil:any= "";
+
+  nettoGewinn:any="";
   constructor( private formBuilder: FormBuilder) {
 
     this.nameForm = this.formBuilder.group({
@@ -24,7 +31,11 @@ export class HauptComponent implements OnInit {
 
     this.myPlants=this.nameForm.get('pflanzenJahr').value;
     this.myErnte=this.nameForm.get('ernte').value;
-    this.plantCost = 50 * this.myPlants;
+    this.plantCost = this.plantPrice * this.myPlants;
+    this.bruttoGewinn = (this.myErnte * this.grammPrice) - this.plantCost;
+    this.steuerAnteil  = this.bruttoGewinn * this.steuer;
+    this.nettoGewinn = this.bruttoGewinn - this.steuerAnteil;
+
 
   }
 
