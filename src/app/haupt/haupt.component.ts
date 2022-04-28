@@ -7,11 +7,10 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup } from '@angular/f
   styleUrls: ['./haupt.component.scss']
 })
 export class HauptComponent implements OnInit {
-  plantPrice = 50;
   public nameForm:FormGroup;
-  myPlants: string = "";
-  myErnte: string = "";
-
+  myPlants:any= "";
+  myErnte:any= "";
+  plantCost:any="";
   constructor( private formBuilder: FormBuilder) {
 
     this.nameForm = this.formBuilder.group({
@@ -23,10 +22,18 @@ export class HauptComponent implements OnInit {
 
   clickme() {
 
-    this.myPlants=this.nameForm.get('pflanzenJahr')?.value;
-    this.myErnte=this.nameForm.get('ernte')?.value;
+    this.myPlants=this.nameForm.get('pflanzenJahr').value;
+    this.myErnte=this.nameForm.get('ernte').value;
+    this.plantCost = 50 * this.myPlants;
 
   }
+
+
+
+
+
+
+
 
 
 
@@ -36,3 +43,4 @@ export class HauptComponent implements OnInit {
 
 
 }
+

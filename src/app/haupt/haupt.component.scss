@@ -24,7 +24,6 @@ fieldset{
 
   text-align: center;
   display: flex;
-
   justify-content: space-between;
   border-color:black;
   margin-top: 20px;
@@ -58,14 +57,13 @@ button{
 output {
   background-color:#1BC789;
   color: white;
-  width: fit-content;
+  width:max-content;
   margin-top: 10px;
   border-radius:10px;
   height: 30px;
   display:flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 0.3rem;
   border-color: black;
   border: solid;
 
