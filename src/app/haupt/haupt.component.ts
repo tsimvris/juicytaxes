@@ -11,6 +11,7 @@ export class HauptComponent implements OnInit {
   myPlants:any= "";
   myErnte:any= "";
   plantCost:any="";
+  bruttoEinname:any="";
   bruttoGewinn:any="";
   plantPrice:number=50;
   grammPrice:number=1.5;
@@ -31,6 +32,7 @@ export class HauptComponent implements OnInit {
 
     this.myPlants=this.nameForm.get('pflanzenJahr').value;
     this.myErnte=this.nameForm.get('ernte').value;
+    this.bruttoEinname=this.myErnte * 1.5;
     this.plantCost = this.plantPrice * this.myPlants;
     this.bruttoGewinn = (this.myErnte * this.grammPrice) - this.plantCost;
     this.steuerAnteil  = this.bruttoGewinn * this.steuer;
